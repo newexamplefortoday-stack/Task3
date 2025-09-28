@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfest Landing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1 class="logo">Techfest</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="hero" class="hero">
+      <h2>Innovation Meets Inspiration</h2>
+      <p>Techfest brings together creators, students and visionaries to explore the future of technology.</p>
+      <a href="#contact" class="cta">Join Us</a>
+    </section>
+
+    <section id="about">
+      <h2>About Techfest</h2>
+      <p>A platform to ignite curiosity, showcase innovation and empower the next generation.</p>
+    </section>
+
+    <section id="features">
+      <h2>Highlights</h2>
+      <div class="grid">
+        <div class="card">🤝 Networking</div>
+        <div class="card">🧠 Workshops</div>
+        <div class="card">🚀 Exhibitions</div>
+      </div>
+    </section>
+
+    <!-- Accessible Contact Form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="cta">Send Message</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Techfest</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
